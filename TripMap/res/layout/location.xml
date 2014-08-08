@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ToggleButton
+            android:id="@+id/model_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:alpha="0.7"
+            android:textOff="交通地图"
+            android:textOn="卫星地图" />
+
+        <LinearLayout
+            android:id="@+id/road"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/model_change"
+            android:paddingRight="4.0dip" >
+
+            <ToggleButton
+                android:id="@+id/road_cond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_its_selector"
+                android:checked="false"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/road"
+            android:paddingRight="4.0dip" >
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:background="@drawable/gengsui" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

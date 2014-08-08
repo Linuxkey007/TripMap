@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/photo_return" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="510dp"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="8dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="1dp"
+         >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#66FFCC" />
+
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bt_nobgd"
+            android:text="完成"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

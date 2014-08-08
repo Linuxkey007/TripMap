@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg_2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="游图既方便，又能随时定位到我的位置."
+        android:textColor="#000000"
+        android:textSize="25dip" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/second_tab_map_bg" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/trip_map" />
+
+    <TextView
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="点击按钮，就能在地图上看到你的位置"
+        android:textColor="#000000"
+        android:textSize="25dip" />
+
+</LinearLayout>
